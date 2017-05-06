@@ -8,6 +8,8 @@
 
 namespace humhub\modules\post;
 
+use Yii;
+
 /**
  * Post Submodule
  *
@@ -34,6 +36,14 @@ class Module extends \humhub\components\Module
         }
 
         return [];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getName()
+    {
+        return Yii::t('PostModule.models_Post', 'post');
     }
 
 }

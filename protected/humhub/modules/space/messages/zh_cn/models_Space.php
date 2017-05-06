@@ -38,4 +38,5 @@ return [
     'Visibility' => '可见性',
     'You cannot create private visible spaces!' => '你不能创建私有的空间',
     'You cannot create public visible spaces!' => '你不能创建公共空间',
+    'Guests' => '游客',
 ];

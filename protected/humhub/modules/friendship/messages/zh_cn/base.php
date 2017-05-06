@@ -30,4 +30,5 @@ return [
     'Sent requests' => '发送请求',
     'Show all friends' => '展示所有好友',
     'Unfriend' => '删除好友',
+    'Actions' => '操作',
 ];

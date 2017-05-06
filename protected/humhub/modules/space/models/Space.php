@@ -508,7 +508,7 @@ class Space extends ContentContainerActiveRecord implements \humhub\modules\sear
 
         // Add guest groups if enabled
         if (Yii::$app->getModule('user')->settings->get('auth.allowGuestAccess')) {
-            $groups[self::USERGROUP_GUEST] = 'Guests';
+            $groups[self::USERGROUP_GUEST] = Yii::t('SpaceModule.models_Space','Guests');
         }
 
         return $groups;

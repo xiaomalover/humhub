@@ -18,7 +18,7 @@ use humhub\widgets\GridView;
             'profile.firstname',
             'profile.lastname',
             [
-                'header' => 'Actions',
+                'header' => Yii::t('FriendshipModule.base', 'Actions'),
                 'class' => 'yii\grid\ActionColumn',
                 'buttons' => [
                     'update' => function ($url, $model) {
