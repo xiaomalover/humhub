@@ -2,6 +2,22 @@ HumHub Change Log
 =================
 1.2.1 (in developement)
 - Fix: Invite error in french language
+- Fix #2518: ActivityStreamWidget::EVENT_INIT is missed (githubjeka)
+- Enh: Fixed accessibility issues in Dashboard/Login/Profile
+- Fix: module beforeInit and afterInit event
+- Enh: Added Registraion::EVENT_AFTER_REGISTRATION UserEvent
+- Enh: Added grunt `migrate-up` and `migrate-create` task
+- Enh: Added profile field type `CheckboxList`
+- Fix: Fixed `ui.addition` `MutationObserver`, only apply additions to inserted nodes.
+- Enh: Changed invite mail subject text
+- Fix #2571: last_login not set after registration direct login 
+- Enh: Always trigger dom widget events for widget `fire` until `triggerDom` is set to false
+- Enh: Added `richtextPaste` event
+- Enh: On search index rebuilding - use batch queries 
+- Fix: `ActiveQueryContent:readable()` for guest users missing join
+- Enh: Added `ContentActiveRecord:managePermission` for changing the default write permission of ContentActiveRecord classes
+- Enh: Moved all default `WallEntryControls` to `WallEntry:getContextMenu()` widget.
+- Fix: Connect google OAuth under `Profile Settings  -> Connected Accounts` throws invalid redirect uri.
 
 1.2.0 (April 16, 2017)
 --------------------------------
