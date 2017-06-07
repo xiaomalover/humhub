@@ -17,5 +17,5 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'View Online' => '在线看',
+    'View Online' => '在线浏览',
 ];
