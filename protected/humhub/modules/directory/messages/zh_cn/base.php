@@ -17,7 +17,7 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'This group has no members yet.' => '',
+    'This group has no members yet.' => '该用户组还没有成员。',
     '<b>Nobody wrote something yet.</b><br>Make the beginning and post something...' => '<b>没有人写的东西。</b> <br>开始写点什么',
     '<b>There are no profile posts yet!</b>' => '<b>还没有个人文章！</b>',
     '<strong>Directory</strong> menu' => '目录菜单',
@@ -31,7 +31,7 @@ return [
     '<strong>Space</strong> directory' => '<strong>空间</strong> 目录',
     '<strong>Space</strong> stats' => '<strong>空间</strong>状态',
     'Average members' => '普通成员',
-    'Directory' => '<strong>目 录</strong>',
+    'Directory' => '目 录',
     'Follows somebody' => '关注某人',
     'Groups' => '组',
     'Members' => '成员',
