@@ -91,7 +91,7 @@ class Login extends Model
         }
 
         if ($user === null) {
-            $this->addError('password', 'User or Password incorrect.');
+            $this->addError('password', Yii::t('UserModule.base','User or Password incorrect.'));
         }
 
         // Delete current password value

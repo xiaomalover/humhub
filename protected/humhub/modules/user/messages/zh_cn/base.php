@@ -32,4 +32,5 @@ return array (
   'You\'re not registered.' => '你没有注册。',
   'Your new password must not equal your current password!' => '你的新密码和当前密码不匹配！',
   'or' => '或者',
+  'User or Password incorrect.' => '用户名或密码错误。',
 );
