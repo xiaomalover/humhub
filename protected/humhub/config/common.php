@@ -132,8 +132,8 @@ $config = [
                 ],
                 'qq' => [
                     'class'        => 'humhub\modules\user\authclient\Qq',
-                    'clientId'     => '101145780',
-                    'clientSecret' => 'a9931aaa3c79b21ccd4ba297cfe88a65',
+                    'clientId'     => '101207798',
+                    'clientSecret' => 'c41fd996a8a0043bb69ecdedcc11fa92',
                 ],
                 'sina' => [
                     'class'        => 'humhub\modules\user\authclient\Sina',
