@@ -137,8 +137,8 @@ $config = [
                 ],
                 'sina' => [
                     'class'        => 'humhub\modules\user\authclient\Sina',
-                    'clientId'     => '4158687516',
-                    'clientSecret' => 'a63a29c88d7fe3804408acb1657bc468',
+                    'clientId'     => '1503468544',
+                    'clientSecret' => 'b8a5c359fbd9916f50c0ee98d738aba0',
                 ],
             ],
         ],
