@@ -200,7 +200,7 @@ $config = [
         'ldap' => [
             // LDAP date field formats
             'dateFields' => [
-            //'birthday' => 'Y.m.d'
+                //'birthday' => 'Y.m.d'
             ],
         ],
         'formatter' => [
@@ -215,10 +215,10 @@ $config = [
             // Seconds before hide time from timeago date
             // Set to false to always display time
             'timeAgoHideTimeAfter' => 259200,
-        // Optional: Callback for TimageAgo FullDateFormat
-        //'timeAgoFullDateCallBack' => function($timestamp) {
-        //    return 'formatted';
-        //}
+            // Optional: Callback for TimageAgo FullDateFormat
+            //'timeAgoFullDateCallBack' => function($timestamp) {
+            //    return 'formatted';
+            //}
         ],
         'humhub' => [
             // Marketplace / New Version Check
