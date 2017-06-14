@@ -123,7 +123,24 @@ $config = [
         ],
         'authClientCollection' => [
             'class' => 'humhub\modules\user\authclient\Collection',
-            'clients' => [],
+            'clients' => [
+                'github' => [
+                    'class' => 'humhub\modules\user\authclient\GitHub',
+                    'clientId' => '26716b067b87d227aca3',
+                    'clientSecret' => '2780c5eda36e8c1704bc60ec87c47a3244731761',
+                    'scope' => 'user:email',
+                ],
+                'qq' => [
+                    'class'        => 'humhub\modules\user\authclient\Qq',
+                    'clientId'     => '101145780',
+                    'clientSecret' => 'a9931aaa3c79b21ccd4ba297cfe88a65',
+                ],
+                'sina' => [
+                    'class'        => 'humhub\modules\user\authclient\Sina',
+                    'clientId'     => '4158687516',
+                    'clientSecret' => 'a63a29c88d7fe3804408acb1657bc468',
+                ],
+            ],
         ],
         'queue' => [
             'class' => 'humhub\components\queue\driver\Sync',
