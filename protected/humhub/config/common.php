@@ -121,6 +121,15 @@ $config = [
             'charset' => 'utf8',
             'enableSchemaCache' => true,
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,//隐藏index.php
+            //'enableStrictParsing' => false,
+            'suffix' => '.html',//后缀，如果设置了此项，那么浏览器地址栏就必须带上.html后缀，否则会报404错误
+            'rules' => [
+                //'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+            ],
+        ],
         'authClientCollection' => [
             'class' => 'humhub\modules\user\authclient\Collection',
             'clients' => [
@@ -131,13 +140,13 @@ $config = [
                     'scope' => 'user:email',
                 ],
                 'qq' => [
-                    'class'        => 'humhub\modules\user\authclient\Qq',
-                    'clientId'     => '101207798',
+                    'class' => 'humhub\modules\user\authclient\Qq',
+                    'clientId' => '101207798',
                     'clientSecret' => 'c41fd996a8a0043bb69ecdedcc11fa92',
                 ],
                 'sina' => [
-                    'class'        => 'humhub\modules\user\authclient\Sina',
-                    'clientId'     => '1503468544',
+                    'class' => 'humhub\modules\user\authclient\Sina',
+                    'clientId' => '1503468544',
                     'clientSecret' => 'b8a5c359fbd9916f50c0ee98d738aba0',
                 ],
             ],
