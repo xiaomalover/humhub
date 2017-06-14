@@ -19,19 +19,6 @@ class Qq extends \yii\authclient\clients\QqOAuth
      */
     protected function normalizeUserAttributes($attributes)
     {
-        if (!isset($attributes['email'])) {
-            $emails = $this->api('user/emails', 'GET');
-
-            if (is_array($emails)) {
-                foreach ($emails as $email) {
-                    if ($email['primary'] == 1 && $email['verified'] == 1) {
-                        $attributes['email'] = $email['email'];
-                        break;
-                    }
-                }
-            }
-        }
-
         return parent::normalizeUserAttributes($attributes);
     }
 
@@ -54,20 +41,20 @@ class Qq extends \yii\authclient\clients\QqOAuth
         return [
             'username' => 'login',
             'firstname' => function ($attributes) {
-                if (!isset($attributes['name'])) {
+                if (!isset($attributes['nickname'])) {
                     return '';
                 }
-                $parts = mb_split(' ', $attributes['name'], 2);
+                $parts = mb_split(' ', $attributes['nickname'], 2);
                 if (isset($parts[0])) {
                     return $parts[0];
                 }
                 return '';
             },
             'lastname' => function ($attributes) {
-                if (!isset($attributes['name'])) {
+                if (!isset($attributes['nickname'])) {
                     return '';
                 }
-                $parts = mb_split(' ', $attributes['name'], 2);
+                $parts = mb_split(' ', $attributes['nickname'], 2);
                 if (isset($parts[1])) {
                     return $parts[1];
                 }

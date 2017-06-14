@@ -19,19 +19,6 @@ class Sina extends \yii\authclient\clients\SinaOAuth
      */
     protected function normalizeUserAttributes($attributes)
     {
-        if (!isset($attributes['email'])) {
-            $emails = $this->api('user/emails', 'GET');
-
-            if (is_array($emails)) {
-                foreach ($emails as $email) {
-                    if ($email['primary'] == 1 && $email['verified'] == 1) {
-                        $attributes['email'] = $email['email'];
-                        break;
-                    }
-                }
-            }
-        }
-
         return parent::normalizeUserAttributes($attributes);
     }
 

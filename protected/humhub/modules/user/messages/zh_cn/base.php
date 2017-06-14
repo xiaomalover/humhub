@@ -33,4 +33,5 @@ return array (
   'Your new password must not equal your current password!' => '你的新密码和当前密码不匹配！',
   'or' => '或者',
   'User or Password incorrect.' => '用户名或密码错误。',
+  'Missing E-Mail Attribute from AuthClient.' => '未能获取到邮箱信息，请用邮箱注册登录后进入帐户设置，连接该第三方登录。'
 );
